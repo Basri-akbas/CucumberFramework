@@ -22,7 +22,7 @@ public class Hooks {
         System.out.println("tearDown çalıştı.");
         // ekran görüntüsü almak için bu sabit kodu kullanabiliriz.
         final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-        // eğer senaryonun sonucu FAILED ise(başarısızsa) ekran görüntüsünü rapora ekleyebilirsin.
+        // eğer senaryonun sonucu FAILED ise(başarısızsa) ekran görüntüsünü rapora ekleyebiliriz.
         if(scenario.isFailed()){
             scenario.embed(screenshot , "image/png");
         }

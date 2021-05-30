@@ -8,7 +8,6 @@ public class ConfigurationReader {
     static Properties properties;
     static{
         // okumak istediğimiz configuration.properties file'ın dosya yolu
-        // C:\Users\isimsiz\IdeaProjects\TestNGProje\configuration.properties
         String path = "configuration.properties";
         // dene - hata varsa yakala.
         // bu işlemi DENE eğer hata alırsan, PROGRAMI DURDURMA
@@ -25,5 +24,5 @@ public class ConfigurationReader {
     public static String getProperty(String key){
         return properties.getProperty(key);
     }
-    // ConfigurationReader.getProperty("fb_email") --- > hamza@techproed.com
+
 }
